@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@700&family=Karla:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@700&family=Karla&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+  }
+  .result-container {
+    width: 600px;
+    height: 400px;
+    border-radius: 5px;
+    display:grid;
+    grid-template-rows: 1fr 1.2fr;
+    border: 1px solid #ccc; 
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+  }
+  .result-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 25px;
+    font-size: 16px;  
+  }
+  .sub{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .sub-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: hsl(179, 62%, 43%);
+    padding: 40px;
+
+  }
+  .why-card{
+    background: hsl(179, 54%, 47%);
+    padding: 40px;
+  }
+ h1{
+    font-family: 'Karla', sans-serif;
+    color:hsl(179, 60%, 43%);
+ }
+ h2{
+    font-family: 'Karla', sans-serif;
+    color:hsl(71, 73%, 54%);
+ }
+ p{
+    color:  hsl(218, 22%, 67%);
+    font-size: 14px;
+
+ }
+ .title{
+    color:hsl(204, 43%, 93%) ;
+    font-size: 16px;
+    margin-bottom: 10px;
+    
+ }
+ button{
+    font-family: 'Karla', sans-serif;
+    width: auto;
+    height: 40px;
+    background:hsl(71, 73%, 54%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 16px;
+ }
+ .dollar{
+    color: white;
+ }
+ .dolar-card{
+   font-family: 'Karla', sans-serif;
+    color:hsl(71, 73%, 54%);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+ }
+ span{
+    
+    color: hsl(217, 15%, 72%);
+
+ }
+ .text-why{
+    color: hsl(204, 19%, 90%)
+ }
+ .text-full{
+   color: hsl(210, 25%, 97%)
+
+ }
+ .attribution{
+   font-size: 14px;
+   color: black;
+ }
+ @media (max-width: 375px) {
+   body {
+     height: auto;
+   }
+   .result-container {
+     margin-top: 20px;
+     display: grid;
+     grid-template-columns: 1fr;
+   }
+   .sub{
+      display:grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+ }
